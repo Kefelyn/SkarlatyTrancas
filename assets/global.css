@@ -1,21 +1,22 @@
 * {
     font-family: 'Bodoni Moda', openSans;
+    box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
 html,
 body {
-    width: 100%;
-    height: 100%;
     overflow-x: hidden;
     scroll-behavior: smooth;
 }
 
-main {
-    min-width: 320px;
-    max-width: 1200px;
-    margin: auto;
+
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
 
 /*------------- HEADER -------------*/
@@ -28,7 +29,9 @@ main {
 }
 
 .header img {
-    height: 150px;
+    width: 100%;
+    max-width: 180px;
+    height: auto;
 }
 
 /*------------- MENU -------------*/
@@ -36,35 +39,33 @@ main {
 .nav {
     background-color: #000;
     width: 100%;
-    margin-bottom: 16px;
 }
 
 .nav-menu {
     display: flex;
     list-style: none;
+    align-items: center;
     justify-content: center;
-    gap: 50px;
-    padding-block: 16px;
-
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 16px;
 }
 
 
 .nav-menu a {
-    width: 100px;
-    display: inline-block;
     color: #fff;
     text-decoration: none;
     text-align: center;
     justify-content: center;
     font-weight: bold;
     cursor: pointer;
-    font-size: 18px;
-    transition-duration: .5s;
+    font-size: 16px;
+    transition: .5s;
+    padding: 10px 15px;
     border-radius: 10px;
 }
 
 .nav-menu a:hover {
-    box-shadow: 0 4px 4px #fff;
     background-color: #fff;
     color: #000;
 }
@@ -72,41 +73,41 @@ main {
 /*------------- AGENDAMENTO -------------*/
 
 #agendamento {
-    background-image: url('https://www.dropbox.com/scl/fi/hb6hq75r9sti8ddlq5bkq/moldura-black.svg?rlkey=wyb7zjqyijhquyrz4efvto6mt&st=ijlt2gof&raw=1');
-    background-size: contain;
+    width: 100%;
+    height: 60vh;
+    padding: 40px 20px;
+    background-image: url('../imagens/fundo.svg');
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
-    height: 50vh;
-    box-sizing: border-box;
-    position: relative;
+
 }
 
 #agendamento .texto {
+    width: 100%;
+    max-width: 800px;
     font-size: 22px;
     text-align: center;
-    align-self: center;
     color: #000;
     text-shadow: 2px 2px 4px #00000082;
-    width: 100%;
-    z-index: 1;
 }
 
 
 .btn-entrar-em-contato {
-    font-size: 20px;
-    width: 200px;
+    width: 100%;
+    max-width: 250px;
     height: 50px;
+    font-size: 20px;
     border-radius: 8px;
     color: #fff;
     background-color: #000;
     border-color: #000;
     cursor: pointer;
     font-weight: bold;
-    transition-duration: .5s
+    transition: .5s;
 }
 
 .btn-entrar-em-contato:hover {
@@ -118,57 +119,77 @@ main {
 
 /*------------- TRANCISTA -------------*/
 
-.sobre-trancista {
-    display: flex;
-    align-items: center;
-    text-align: center;
+#sobre {
     background-color: #fff;
-    gap: 32px;
-    margin: 25px;
+    height: auto;
 }
 
-.sobre-trancista img {
-    width: 500px;
+.sobre-trancista,
+.sobre-salao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 32px;
+    padding: 30px 20px;
+}
+
+.trancista img {
+    width: 100%;
+    max-width: 400px;
 }
 
 .main h2 {
     color: #000;
-    text-shadow: 2px 2px 4px #00000082;
-    font-size: 32px;
+    text-shadow: 2px 2px 4px #00000064;
+    font-size: 30px;
+    margin-bottom: 12px;
 }
 
 .main p {
-    font-size: 20px;
+    font-size: 18px;
     text-align: justify;
+    font-weight: 600;
 }
 
 /*------------- TRANÇAS -------------*/
 
 #sobre-trancas {
+    background-image: url('../imagens/fundo.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
     border-radius: 30px;
     text-align: center;
+    align-items: center;
     justify-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 40px 20px;
 }
 
 #sobre-trancas h2 {
-    color: #000;
-    font-size: 30px;
-    text-shadow: 2px 2px 4px #00000082;
-    padding-bottom: 20px;
-
+    color: #fff;
+    font-size: 25px;
+    padding-top: 30px;
 }
+
+
+#sobre-trancas .btn-entrar-em-contato {
+    margin: 40px;
+}
+
 
 /*------------- CARROSEL DAS TRANÇAS -------------*/
-
 .carrosel-trancas {
-    display: flex;
-    position: relative;
-    width: 80%;
+    background-color: #0000006b;
+    width: 100%;
     max-width: 900px;
     overflow: hidden;
-    border-radius: 20px;
+    border-radius: 30px;
+    position: relative;
 }
-
 
 .carrosel {
     display: flex;
@@ -177,7 +198,7 @@ main {
 
 .carrosel img {
     width: 100%;
-    border-radius: 10px;
+    object-fit: cover;
 }
 
 .botao-anterior,
@@ -185,7 +206,7 @@ main {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background-color: #000;
+    background-color: #000000d3;
     color: #fff;
     border: none;
     padding: 10px;
@@ -195,56 +216,53 @@ main {
 
 .botao-anterior {
     left: 10px;
+    opacity: .8;
 }
 
 .botao-posterior {
     right: 10px;
+    opacity: .8;
 }
 
-.carrosel-trancas button:hover {
-    color: #000;
-    background-color: #fff;
-    box-shadow: 0 4px 8px #000;
+/*------------- DÚVIDAS FREQUENTES -------------*/
+
+#duvidas-frequentes {
+    width: 100%;
+    max-width: 900px;
+    align-items: center;
+    justify-self: center;
+    padding: 40px 20px;
 }
 
-.bolinhas-carrosel {
-    position: absolute;
-    bottom: 25px;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-}
-
-.bolinhas {
-    width: 10px;
-    height: 5px;
-    margin: 5px;
-    background-color: #000;
-    border-radius: 50%;
-    cursor: pointer;
-    opacity: 0.5;
-    
-}
-
-.bolinhas.ativo {
-    opacity: 1;
-    background-color: #000;
-}
-
-/*------------- LOCALIZAÇÃO -------------*/
-
-.sobre-localizacao {
-    display: flex;
-    align-self: center;
+#duvidas-frequentes h2 {
     text-align: center;
-    background-color: #fff;
-    gap: 32px;
-    margin: 30px;
 }
 
-.sobre-localizacao iframe {
-    width: 5000px;
-    height: 300px;
+#duvidas-frequentes details {
+    margin-bottom: 12px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+#duvidas-frequentes summary {
+    background-color: #000;
+    font-size: 18px;
+    color: #fff;
+    padding: 16px;
+    cursor: pointer;
+    list-style: none;
+    transition: 0.3s;
+}
+
+#duvidas-frequentes summary:hover {
+    opacity: .9;
+}
+
+#duvidas-frequentes p {
+    background-color: #f5f5f5;
+    font-weight: bold;
+    padding: 16px;
+    color: #000;
 }
 
 /*------------- FOOTER -------------*/
@@ -262,7 +280,7 @@ main {
     padding: 10px;
     cursor: pointer;
     border-radius: 10px;
-    left: 95%;
+    right: 20px;
     top: -20%;
 }
 
@@ -270,9 +288,9 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 20px;
-    height: 250px;
-    gap: 100px;
+    flex-wrap: wrap;
+    padding: 40px 20px;
+    gap: 40px;
     color: #fff;
     text-decoration: none;
     background-color: #000;
@@ -280,23 +298,24 @@ main {
 
 .footer-informacoes {
     display: flex;
-    gap: 50px;
+    justify-content: center;
+    text-align: center;
+    gap: 30px;
 }
 
 .footer .redes-sociais img {
-    width: 38px;
+    width: 35px;
+    justify-self: center;
 }
 
-.footer h3 {
-    padding-bottom: 10px;
-}
-
-.footer p {
-    font-size: 14px;
+.footer a {
+    color: #fff;
+    text-decoration: none;
 }
 
 .footer .logo-footer {
-    width: 600px;
+    width: 100%;
+    max-width: 400px;
 }
 
 .footer-credito {
@@ -304,35 +323,31 @@ main {
     background-color: #fff;
     color: #000;
     font-size: 14px;
+    padding: 8px;
 }
 
 /*------------- RESPONSIVIDADE NAS TELAS -------------*/
 
-@media screen and (max-width: 390px) {
-    img {
-        width: 50vw;
-        height: auto;
+@media (max-width: 768px) {
+
+    .trancista img {
+        width: 300px;
+    }
+
+    .sobre-trancista,
+    .sobre-salao {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-container {
+        flex-direction: column;
     }
 }
 
-@media screen and (max-width: 768px) {
-    img {
-        width: 50vw;
-        height: auto;
-    }
-}
+@media (min-width: 769px) {
 
-@media screen and (min-width:1366px) and (max-width: 1920px) {
-    img {
-        width: 50vw;
-        height: auto;
-    }
-}
-
-@media screen and (min-width:1921px) {
-    img {
-        width: 50vw;
-        max-width: none;
-        height: auto;
+    .trancista img {
+        width: 400px;
     }
 }
