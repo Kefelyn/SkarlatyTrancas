@@ -76,10 +76,6 @@ img {
     width: 100%;
     height: 60vh;
     padding: 40px 20px;
-    background-image: url('../imagens/fundo.svg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -92,7 +88,7 @@ img {
     font-size: 22px;
     text-align: center;
     color: #000;
-    text-shadow: 2px 2px 4px #00000082;
+    text-shadow: 2px 2px 2px #300059;
 }
 
 
@@ -103,56 +99,26 @@ img {
     font-size: 20px;
     border-radius: 8px;
     color: #fff;
-    background-color: #000;
-    border-color: #000;
+    background-color: #300059;
+    border-color: #FFF;
     cursor: pointer;
     font-weight: bold;
     transition: .5s;
 }
 
 .btn-entrar-em-contato:hover {
-    color: #000;
+    color: #2f0059bd;
     background-color: #fff;
     transform: scale(1.05);
-    box-shadow: 0 8px 16px #000;
+    box-shadow: 0 8px 16px #2f0059bd;
 }
 
-/*------------- TRANCISTA -------------*/
+/*------------- TRANÇAS -------------*/
 
 #sobre {
     background-color: #fff;
     height: auto;
 }
-
-.sobre-trancista,
-.sobre-salao {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    gap: 32px;
-    padding: 30px 20px;
-}
-
-.trancista img {
-    width: 100%;
-    max-width: 400px;
-}
-
-.main h2 {
-    color: #000;
-    text-shadow: 2px 2px 4px #00000064;
-    font-size: 30px;
-    margin-bottom: 12px;
-}
-
-.main p {
-    font-size: 18px;
-    text-align: justify;
-    font-weight: 600;
-}
-
-/*------------- TRANÇAS -------------*/
 
 #sobre-trancas {
     background-image: url('../imagens/fundo.svg');
@@ -170,20 +136,18 @@ img {
 }
 
 #sobre-trancas h2 {
-    color: #fff;
+    color: #FFF;
     font-size: 25px;
     padding-top: 30px;
 }
 
-
 #sobre-trancas .btn-entrar-em-contato {
-    margin: 40px;
+    margin-top: 20px;
 }
-
 
 /*------------- CARROSEL DAS TRANÇAS -------------*/
 .carrosel-trancas {
-    background-color: #0000006b;
+    background-color: #2f0059b1;
     width: 100%;
     max-width: 900px;
     overflow: hidden;
@@ -206,7 +170,7 @@ img {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background-color: #000000d3;
+    background-color: #300059;
     color: #fff;
     border: none;
     padding: 10px;
@@ -222,6 +186,50 @@ img {
 .botao-posterior {
     right: 10px;
     opacity: .8;
+}
+
+/*------------- TRANCISTA -------------*/
+
+.sobre-trancista,
+.sobre-salao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 32px;
+    padding: 30px 20px;
+}
+
+.trancista img {
+    width: 100%;
+    max-width: 400px;
+}
+
+.main h2 {
+    color: #2f0059b1;
+    font-size: 30px;
+    margin-bottom: 12px;
+}
+
+.main p {
+    color: #300059;
+    font-size: 18px;
+    text-align: justify;
+    font-weight: 600;
+}
+
+/*------------- LOCALIZAÇÃO -------------*/
+
+.localizacao {
+    justify-self: center;
+    width: 100%;
+    max-width: 800px;
+}
+
+.localizacao iframe {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    display: block;
 }
 
 /*------------- DÚVIDAS FREQUENTES -------------*/
@@ -245,7 +253,7 @@ img {
 }
 
 #duvidas-frequentes summary {
-    background-color: #000;
+    background-color: #300059;
     font-size: 18px;
     color: #fff;
     padding: 16px;
@@ -255,14 +263,16 @@ img {
 }
 
 #duvidas-frequentes summary:hover {
-    opacity: .9;
+    opacity: .8;
+    background-color: #2f0059f3;
 }
 
 #duvidas-frequentes p {
-    background-color: #f5f5f5;
+    background-color: #2f00598a;
+    opacity: .8;
     font-weight: bold;
     padding: 16px;
-    color: #000;
+    color: #fff;
 }
 
 /*------------- FOOTER -------------*/
@@ -274,14 +284,15 @@ img {
 .botao-voltar-inicio {
     position: absolute;
     transform: rotate(90deg);
-    background-color: #000;
+    background-color: #300059;
     color: #fff;
+    opacity: .9;
     border: none;
-    padding: 10px;
+    padding: 8px;
     cursor: pointer;
     border-radius: 10px;
     right: 20px;
-    top: -20%;
+    top: -13%;
 }
 
 .footer-container {
@@ -324,6 +335,10 @@ img {
     color: #000;
     font-size: 14px;
     padding: 8px;
+}
+
+.footer-credito a {
+    color: #000;
 }
 
 /*------------- RESPONSIVIDADE NAS TELAS -------------*/
