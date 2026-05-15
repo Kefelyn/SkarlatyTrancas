@@ -328,7 +328,7 @@ img {
 
 /*------------- RESPONSIVIDADE NAS TELAS -------------*/
 
-@media (max-width: 768px) {
+@media (max-width: 1180px) {
 
     .trancista img {
         width: 300px;
@@ -345,7 +345,7 @@ img {
     }
 }
 
-@media (min-width: 769px) {
+@media (min-width: 1181px) {
 
     .trancista img {
         width: 400px;
