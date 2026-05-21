@@ -4,7 +4,7 @@
 ### Tecnologias e desafios 🤖
 As tecnologias utilizadas foram: HTML, CSS e JavaScript. O maior desafio superado neste projeto foi, com toda certeza, encontrar a tag correta e conseguir centralizar as div. Porém, também foi o conteúdo que mais fixou ao praticar. 
 
-Outro desafio e apredizado foi a reponsividade do site para todas as telas. É algo que será estudado mais afundo e aprimorado.
+Outro desafio e aprendizado foi a responsividade do site para todas as telas. É algo que será estudado mais afundo e aprimorado.
 
 <img style="padding-right: 10px;" alt="Responsividade" title="Responsividade" src="https://www.dropbox.com/scl/fi/pl4zd1zm33b52uqm9bk2a/SkarlatyTran-as-Responsividade.gif?rlkey=c1rv8llhhjjejhe2glt7kjv7i&st=j9917mbn&raw=1"/>
 
