@@ -8,7 +8,6 @@ const carrosel = document.querySelector('.carrosel');
   
   function atualizarCarrosel(){
     carrosel.style.transform = `translateX(${-index * 100}%)`;
-   
   }
 
   btnAnterior.addEventListener('click', () => {
